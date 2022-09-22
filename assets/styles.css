@@ -2,13 +2,12 @@
     margin: 0%;
 }
 
-body {
+/* body {
     /* background-image: url("/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; */
-    background-color: lightblue;
-}
+} */
 
 /* navbar logo */
 #logo {
@@ -55,6 +54,7 @@ header {
 }
 /* flex container holding choices */
 .container-two {
+    background-color: lightblue;
     display: grid;
     border: 1px solid black;
     margin-left:auto;
@@ -75,7 +75,7 @@ header {
 
 }
 #random-container {
-    background-image: url("/random.jpg");
+    background-image: url("/assets/photos/random.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

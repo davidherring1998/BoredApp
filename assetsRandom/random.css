@@ -1,0 +1,80 @@
+* {
+    margin: 0%;
+}
+
+body {
+    /* background-image: url("/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+}
+
+/* navbar logo */
+#logo {
+    border: .5px solid none;
+    border-radius: 8px;
+}
+
+header {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline;
+    text-shadow: 1px 1px gray;
+}
+
+/* initial box container */
+.container-one {
+    display: flex;
+    background-color: lightblue ;
+    border: 1px solid red;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5%;
+    height: 800px;
+    border-radius: 10px;
+}
+
+.box-one {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 2.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    height: 350px;
+    width: 45%;
+}
+#btn-one {
+    width: 100%;
+    position: relative;
+    top: 70px;
+    border: 2px solid red;
+    border-radius: 10px;
+}
+/* hover for initial question button */
+#btn-one:hover{
+    font-size: larger;
+    color: red;
+    border-color: black;
+}
+
+.box-two {
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 2.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+    height: 750px;
+    width: 45%;
+
+}
+
+/* footer */
+footer {
+    background-color: lightgray;
+    padding: 15px;
+    margin-top: 10%;text-align: center;
+    border-top: 1px solid black;
+}
