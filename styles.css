@@ -1,6 +1,15 @@
 * {
     margin: 0%;
 }
+
+body {
+    /* background-image: url("/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; */
+    background-color: lightblue;
+}
+
 /* navbar logo */
 #logo {
     border: .5px solid none;
@@ -77,7 +86,12 @@ header {
     text-align: center;
     position: relative;
     bottom: 65px;
-
+}
+#choice-btn{
+    width: 100%;
+    background: linear-gradient(to right, rgb(243, 243, 6), lightblue , red);
+    border: 1px solid white ;
+    border-radius: 30px;
 }
 .row-two {
     display: grid;
