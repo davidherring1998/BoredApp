@@ -22,18 +22,30 @@ header {
     text-shadow: 1px 1px gray;
 }
 
-/* initial box container */
+/*box container */
 .container-one {
     display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
     background-color: lightblue ;
     border: 1px solid red;
     margin-left:auto;
     margin-right:auto;
     margin-top: 5%;
-    height: 800px;
+    margin-bottom: 15%;
+    height: 1000px;
     border-radius: 10px;
 }
+/* first row */
+.row-one {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5%;
+    width: 100%;
 
+}
 .box-one {
     border: 5px solid black;
     border-radius: 10px;
@@ -59,10 +71,10 @@ header {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 15px;
-    /* position: relative;
-    top: 70px; */
     border: 2px solid red;
     border-radius: 10px;
+    font-size: 2vw; 
+
     
 }
 /* hover for initial question button */
@@ -71,9 +83,13 @@ header {
     color: red;
     border-color: black;
 }
-
-.response-line {
+#set-up-line{
+    font-size: 1.2vw;
+}
+#punch-line {
+    font-size: 1.5vw;
     color: red;
+    font-weight: bold;
 }
 
 .box-two {
@@ -100,8 +116,6 @@ header {
     width: 100%;
     margin-top: 50px;
     margin-bottom: 15px;
-    /* position: relative;
-    top: 70px; */
     border: 2px solid red;
     border-radius: 10px;
     
@@ -123,6 +137,95 @@ header {
     width: 100%;
     border-radius: 10px;
 }
+/* output */
+#percentage{
+    text-align: center;
+    font-size: 1.5vw;
+}
+#result {
+    text-align: center;
+
+    font-size: 1.2vw;
+    font-weight: bold;
+}
+
+/* second row */
+.row-two {
+    display: flex;
+    flex-wrap: nowrap;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 1.5%;
+    width: 100%;
+
+}
+
+/* box three */
+.box-three {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 2.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 2%;
+    height: 350px;
+    width: 45%;
+    height: 350px;
+    width: 45%;
+    background-color: red;
+}
+#box-three-header {
+    margin-bottom:20px;
+    font-size: 2vw;
+}
+#btn-three {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    
+}
+/* hover for initial question button */
+#btn-three:hover{
+    font-size: larger;
+    color: red;
+    border-color: black;
+}
+
+/* box four */
+.box-fourth {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 2.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 10%;
+    margin-right: 2%;
+    height: 350px;
+    width: 45%;
+    background-color: red;
+}
+#btn-four {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+    color: red;
+    
+}
+/* hover for initial question button */
+#btn-four:hover{
+    font-size: larger;
+    color: red;
+    border-color: black;
+}
+
+
 /* footer */
 footer {  
     background-color: lightgray;
