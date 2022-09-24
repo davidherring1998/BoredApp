@@ -120,4 +120,5 @@ footer {
     border-top: 1px solid black;
     bottom: 0;
     width: 100%;
+    position: fixed;
 }
