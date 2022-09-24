@@ -99,7 +99,7 @@ header {
     margin: 2.5px;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-right: 2%;
     height: 350px;
     width: 45%;
@@ -173,7 +173,10 @@ header {
     width: 45%;
     height: 350px;
     width: 45%;
-    background-color: red;
+    background-image: url("../assets/photos/music.jpg");
+    background-size: cover;
+    background-position:left;
+    background-repeat: no-repeat;
 }
 #box-three-header {
     margin-bottom:20px;
@@ -186,7 +189,13 @@ header {
     border: 2px solid red;
     border-radius: 10px;
     color: red;
-    
+}
+#lyric-result{
+    font-size: 1.5vw;
+}
+#artist-result {
+    font-size: 1.2vw;
+    font-weight: bolder;
 }
 /* hover for initial question button */
 #btn-three:hover{
@@ -203,7 +212,7 @@ header {
     margin: 2.5px;
     margin-top: 25px;
     margin-bottom: 25px;
-    margin-left: 10%;
+    margin-left: 8%;
     margin-right: 2%;
     height: 350px;
     width: 45%;
