@@ -44,7 +44,7 @@ header {
     margin-left: 2%;
     height: 350px;
     width: 45%;
-    background-image: url("assets/photos/background.jpg");
+    background-image: url("../assets/photos/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -87,7 +87,7 @@ header {
     margin-right: 2%;
     height: 350px;
     width: 45%;
-    background-image: url("assets/photos/hearts.jpg");
+    background-image: url("../assets/photos/hearts.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
