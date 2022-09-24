@@ -2,12 +2,12 @@
     margin: 0%;
 }
 
-body {
-    /* background-image: url("/background.jpg");
+/* body {
+    background-image: url("/assets/photos/background.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
-}
+    background-repeat: no-repeat;
+} */
 
 /* navbar logo */
 #logo {
@@ -35,21 +35,35 @@ header {
 }
 
 .box-one {
-    border: 1px solid black;
+    border: 5px solid black;
     border-radius: 10px;
     padding: 30px;
     margin: 2.5px;
     margin-top: 25px;
     margin-bottom: 25px;
+    margin-left: 2%;
     height: 350px;
     width: 45%;
+    background-image: url("/assets/photos/background.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+#box-one-header {
+    margin-bottom:20px;
+    font-size: 2vw;
+
 }
 #btn-one {
     width: 100%;
-    position: relative;
-    top: 70px;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    /* position: relative;
+    top: 70px; */
     border: 2px solid red;
     border-radius: 10px;
+    
 }
 /* hover for initial question button */
 #btn-one:hover{
@@ -58,23 +72,52 @@ header {
     border-color: black;
 }
 
+.response-line {
+    color: red;
+}
+
 .box-two {
-    border: 1px solid black;
+    border: 5px solid black;
     border-radius: 10px;
     padding: 30px;
     margin: 2.5px;
     margin-top: 25px;
     margin-bottom: 25px;
     margin-left: 10%;
-    height: 750px;
+    margin-right: 2%;
+    height: 350px;
     width: 45%;
-
+    background-image: url("/assets/photos/hearts.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#box-two-header {
+    font-size: 2vw;
+}
+#btn-two {
+    width: 100%;
+    margin-top: 50px;
+    margin-bottom: 15px;
+    /* position: relative;
+    top: 70px; */
+    border: 2px solid red;
+    border-radius: 10px;
+    
+}
+/* hover for initial question button */
+#btn-two:hover{
+    font-size: larger;
+    color: red;
+    border-color: black;
 }
 
 /* footer */
-footer {
+footer {  
     background-color: lightgray;
     padding: 15px;
-    margin-top: 10%;text-align: center;
+    text-align: center;
     border-top: 1px solid black;
+    bottom: 0;
+    width: 100%;
 }

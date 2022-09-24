@@ -3,10 +3,10 @@
 }
 
 /* body {
-    /* background-image: url("/background.jpg");
+     background-image: url("/background.jpg");
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat; */
+    background-repeat: no-repeat; 
 } */
 
 /* navbar logo */
@@ -31,12 +31,19 @@ header {
     margin-top: 5%;
     height: 800px;
     border-radius: 10px;
+    background-image: url("/assets/photos/ballons.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
 }
 /* initial container question */
 #header-question {
     text-align: center;
     position: relative;
-    top: 100px;
+    font-weight: bolder;
+    font-size: 3rem;
+    color: white;
+    top: 200px;
 }
 /* initial question button */
 #quest-one-btn {
@@ -111,6 +118,9 @@ header {
 footer {
     background-color: lightgray;
     padding: 15px;
-    margin-top: 10%;text-align: center;
+    text-align: center;
     border-top: 1px solid black;
+    bottom: 0;
+    width: 100%;
+
 }
