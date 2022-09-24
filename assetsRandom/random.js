@@ -3,8 +3,6 @@ const setUpLine = document.getElementById('setup')
 const responseLine = document.getElementById('punch')
 
 // love api 
-const yName = document.getElementById('userName').value;
-const lName = document.getElementById('loverName').value[0];
 const percentage = document.getElementById('percentage');
 const result = document.getElementById('result');
 
@@ -39,6 +37,8 @@ const loveBtn = document.getElementById('btn-two')
 loveBtn.addEventListener('click', loveApi)
 
 function loveApi () {
+const yName = document.getElementById('userName').value;
+const lName = document.getElementById('loverName').value;
 
 
 // get love compatibility api 
@@ -49,7 +49,8 @@ const options = {
 		'X-RapidAPI-Host': 'love-calculator.p.rapidapi.com'
 	}
 };
-fetch('https://love-calculator.p.rapidapi.com/getPercentage?sname=Alice&fname=John', options)
+
+fetch(`https://love-calculator.p.rapidapi.com/getPercentage?sname=${yName}&fname=${lName}`, options)
 	.then(response => response.json())
 	.then(response =>  {
 		const getPercentage = response.percentage;
@@ -57,7 +58,5 @@ fetch('https://love-calculator.p.rapidapi.com/getPercentage?sname=Alice&fname=Jo
 		percentage.append(`${getPercentage}%`);
 		result.append(getResults);
 		console.log(response);
-		console.log(yName)
-		console.log(lName)
 	})
 }
