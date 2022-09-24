@@ -31,7 +31,7 @@ header {
     margin-top: 5%;
     height: 800px;
     border-radius: 10px;
-    background-image: url("/assets/photos/ballons.jpg");
+    background-image: url("photos/background.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat; 
@@ -82,7 +82,7 @@ header {
 
 }
 #random-container {
-    background-image: url("/assets/photos/random.jpg");
+    background-image: url("photos/random.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
