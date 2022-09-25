@@ -6,15 +6,18 @@ const responseLine = document.getElementById('punch')
 const percentage = document.getElementById('percentage');
 const result = document.getElementById('result');
 
-// funny rap lyrics 
+// funny rap lyrics api
 const lyricResult = document.getElementById('lyric');
 const artistResult = document.getElementById('artist')
+
+
+// excuse api 
+const excuseResponse = document.getElementById('excuse-api');
 
 
 // random joke api call
 const jokeBtn = document.getElementById('btn-one');
 jokeBtn.addEventListener('click', jokesApi)
-
 
 function jokesApi () {
 	
@@ -110,17 +113,19 @@ someBtn.addEventListener('click', someAPi)
 
 function someAPi () {
 
-	const options = {
-		method: 'GET',
-		headers: {
-			'X-RapidAPI-Key': '00e3db074cmsh859ff928fa0e703p114d09jsn7ee010402a05',
-			'X-RapidAPI-Host': 'book-of-answers.p.rapidapi.com'
-		}
-	};
-	
-	fetch('https://book-of-answers.p.rapidapi.com/no', options)
-		.then(response => response.json())
-		.then(response =>  {
-			console.log(response)
+	const choices = document.getElementById('categories');
+	const value = choices.value;
+
+		fetch(`https://excuser.herokuapp.com/v1/excuse/${value}`)
+			.then(response => response.json())
+			.then(response => {
+
+				const excuse = response[0].excuse;
+
+				excuseResponse.textContent = excuse;
+
+				excuseResponse.setAttribute('id', 'excuse-response');
+
 		})
+
 }

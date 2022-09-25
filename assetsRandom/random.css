@@ -1,13 +1,3 @@
-* {
-    margin: 0%;
-}
-
-/* body {
-    background-image: url("/assets/photos/background.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-} */
 
 /* navbar logo */
 #logo {
@@ -69,17 +59,17 @@ header {
 }
 #btn-one {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 15px;
     border: 2px solid red;
     border-radius: 10px;
-    font-size: 2vw; 
+    font-size: 1.2vw; 
 
     
 }
 /* hover for initial question button */
 #btn-one:hover{
-    font-size: larger;
+    font-size: 2vw;
     color: red;
     border-color: black;
 }
@@ -114,7 +104,7 @@ header {
 }
 #btn-two {
     width: 100%;
-    margin-top: 50px;
+    margin-top: 10px;
     margin-bottom: 15px;
     border: 2px solid red;
     border-radius: 10px;
@@ -130,7 +120,7 @@ header {
 #userName{
     width: 100%;
     border-radius: 10px;
-    margin-top: 5%;
+    margin-top: 2%;
     margin-bottom: 1px;
 }
 #loverName{
@@ -144,7 +134,7 @@ header {
 }
 #result {
     text-align: center;
-
+    color: red;
     font-size: 1.2vw;
     font-weight: bold;
 }
@@ -192,10 +182,13 @@ header {
 }
 #lyric-result{
     font-size: 1.5vw;
+    text-align: center;
 }
 #artist-result {
     font-size: 1.2vw;
     font-weight: bolder;
+    text-align: center;
+    color: red;
 }
 /* hover for initial question button */
 #btn-three:hover{
@@ -216,7 +209,11 @@ header {
     margin-right: 2%;
     height: 350px;
     width: 45%;
-    background-color: red;
+    background-image: url("../assets/photos/excuse.jpg");
+    background-blend-mode:exclusion;
+    background-size: cover;
+    background-position:right;
+    background-repeat: no-repeat;
 }
 #btn-four {
     width: 100%;
@@ -224,7 +221,6 @@ header {
     margin-bottom: 15px;
     border: 2px solid red;
     border-radius: 10px;
-    color: red;
     
 }
 /* hover for initial question button */
@@ -232,6 +228,18 @@ header {
     font-size: larger;
     color: red;
     border-color: black;
+}
+#excuse-label {
+    font-size: 1.6vw;
+    margin-right: 1%; ;
+}
+#categories {
+    border: 1px solid black;
+    border-radius: 5px;
+}
+#excuse-response{
+    color: white;
+    font-size: 1.5vw;
 }
 
 
