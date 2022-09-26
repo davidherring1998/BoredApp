@@ -1,0 +1,68 @@
+/* navbar logo */
+#logo {
+    border: .5px solid none;
+    border-radius: 8px;
+}
+/* main header */
+header {
+    text-align: center;
+    margin-top: 5%;
+    text-decoration: underline;
+}
+/*box container */
+.container-one {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    background-color: lightblue ;
+    border: 1px solid red;
+    margin-left:auto;
+    margin-right:auto;
+    margin-top: 5%;
+    margin-bottom: 15%;
+    height: 1000px;
+    border-radius: 10px;
+}
+.box-header {
+    font-size: 2vw;
+    position: relative;
+}
+
+/* box-one */
+.box-one {
+    border: 5px solid black;
+    border-radius: 10px;
+    padding: 30px;
+    margin: 2.5px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    margin-left: 2%;
+    height: 350px;
+    width: 45%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 1.2vw; 
+    background-color: white;
+}
+.btn:hover{
+    font-size: 1.5vw;
+    color: red;
+    border-color: black;
+/* footer */
+footer {  
+    background-color: lightgray;
+    padding: 15px;
+    text-align: center;
+    border-top: 1px solid black;
+    bottom: 0;
+    width: 100%;
+    position: fixed;
+}

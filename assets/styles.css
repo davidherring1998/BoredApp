@@ -99,18 +99,30 @@ header {
 #choice-btn{
     width: 100%;
     background: linear-gradient(to right, rgb(243, 243, 6), lightblue , red);
-    border: 1px solid white ;
+    border: .5px solid white ;
     border-radius: 30px;
 }
-.row-two {
-    display: grid;
-    grid-column: auto;
-    border: 2px solid black;
-    padding: 80px;
-    margin: 30px;
-    border: 2px solid red;
-    border-radius: 20px;
+
+#games-container {
+    background-image: url("photos/games.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
+#games-header{
+    font-size: 1rem;
+    font-weight: 100px;
+    text-align: center;
+    position: relative;
+    bottom: 65px;
+}
+#games-btn{
+    width: 100%;
+    background: linear-gradient(to right, white,red ,yellow, lightblue);
+    border: .5px solid white ;
+    border-radius: 30px;
+}
+
 
 
 
