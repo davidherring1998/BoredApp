@@ -4,14 +4,12 @@
     border: .5px solid none;
     border-radius: 8px;
 }
-
+/* main header */
 header {
     text-align: center;
     margin-top: 5%;
     text-decoration: underline;
-    text-shadow: 1px 1px gray;
 }
-
 /*box container */
 .container-one {
     display: flex;
@@ -26,6 +24,27 @@ header {
     height: 1000px;
     border-radius: 10px;
 }
+/* box headers */
+.box-header {
+    font-size: 2vw;
+    position: relative;
+}
+/* box buttons */
+.btn {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 2px solid red;
+    border-radius: 10px;
+    font-size: 1.2vw; 
+    background-color: white;
+}
+.btn:hover{
+    font-size: 1.5vw;
+    color: red;
+    border-color: black;
+}
+
 /* first row */
 .row-one {
     display: flex;
@@ -34,8 +53,9 @@ header {
     margin-right:auto;
     margin-top: 5%;
     width: 100%;
-
 }
+
+/* box-one */
 .box-one {
     border: 5px solid black;
     border-radius: 10px;
@@ -51,28 +71,6 @@ header {
     background-position: center;
     background-repeat: no-repeat;
 }
-
-#box-one-header {
-    margin-bottom:20px;
-    font-size: 2vw;
-
-}
-#btn-one {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border: 2px solid red;
-    border-radius: 10px;
-    font-size: 1.2vw; 
-
-    
-}
-/* hover for initial question button */
-#btn-one:hover{
-    font-size: 2vw;
-    color: red;
-    border-color: black;
-}
 #set-up-line{
     font-size: 1.2vw;
 }
@@ -82,6 +80,7 @@ header {
     font-weight: bold;
 }
 
+/* box-two */
 .box-two {
     border: 5px solid black;
     border-radius: 10px;
@@ -97,24 +96,6 @@ header {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-}
-#box-two-header {
-    font-size: 2vw; 
-    position: relative;
-}
-#btn-two {
-    width: 100%;
-    margin-top: 10px;
-    margin-bottom: 15px;
-    border: 2px solid red;
-    border-radius: 10px;
-    
-}
-/* hover for initial question button */
-#btn-two:hover{
-    font-size: larger;
-    color: red;
-    border-color: black;
 }
 /* inputs */
 #userName{
@@ -138,7 +119,6 @@ header {
     font-size: 1.2vw;
     font-weight: bold;
 }
-
 /* second row */
 .row-two {
     display: flex;
@@ -147,7 +127,6 @@ header {
     margin-right:auto;
     margin-top: 1.5%;
     width: 100%;
-
 }
 
 /* box three */
@@ -165,20 +144,8 @@ header {
     width: 45%;
     background-image: url("../assets/photos/music.jpg");
     background-size: cover;
-    background-position:left;
+    background-position:center;
     background-repeat: no-repeat;
-}
-#box-three-header {
-    margin-bottom:20px;
-    font-size: 2vw;
-}
-#btn-three {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    border: 2px solid red;
-    border-radius: 10px;
-    color: red;
 }
 #lyric-result{
     font-size: 1.5vw;
@@ -189,12 +156,6 @@ header {
     font-weight: bolder;
     text-align: center;
     color: red;
-}
-/* hover for initial question button */
-#btn-three:hover{
-    font-size: larger;
-    color: red;
-    border-color: black;
 }
 
 /* box four */
@@ -212,36 +173,134 @@ header {
     background-image: url("../assets/photos/excuse.jpg");
     background-blend-mode:exclusion;
     background-size: cover;
-    background-position:right;
+    background-position:center;
     background-repeat: no-repeat;
-}
-#btn-four {
-    width: 100%;
-    margin-top: 50px;
-    margin-bottom: 15px;
-    border: 2px solid red;
-    border-radius: 10px;
-    
-}
-/* hover for initial question button */
-#btn-four:hover{
-    font-size: larger;
-    color: red;
-    border-color: black;
+
 }
 #excuse-label {
-    font-size: 1.6vw;
-    margin-right: 1%; ;
+    font-size: 2vw;
+    margin-right: 1%; 
+    color: white;
 }
 #categories {
     border: 1px solid black;
     border-radius: 5px;
+    width: 100%;
+    font-size: 2.5vw;
 }
 #excuse-response{
     color: white;
     font-size: 1.5vw;
 }
 
+/* media queries for smaller screens*/
+@media only screen and (max-width: 600px) {
+    /* btn */
+    .btn {
+        font-size: 2vw;
+    }
+    /* box one */
+    #set-up-line{
+        font-size: 2.2vw;
+    }
+    #punch-line {
+        font-size: 2vw;
+    }
+    /* box two */
+    #userName{
+        font-size: 2.5vw;
+    }
+    #loverName{
+        font-size: 2.5vw;
+    }
+    #percentage{
+        font-size: 2.2vw;
+    }
+    #result {
+        font-size: 2vw;
+    }
+    /* box three */
+    #lyric-result{
+        font-size: 2.2vw;
+    }
+    #artist-result {
+        font-size: 2vw;
+    }
+    /* box four */
+    #excuse-label {
+        font-size: 2.2vw;
+    }
+    #categories {
+        border: 1px solid black;
+        border-radius: 5px;
+        font-size: 3vw;
+    }
+    #excuse-response{
+        font-size: 2vw;
+    }
+
+}
+/* media query for lager screens  */
+@media only screen and (min-width: 1200px) {
+       /* main container */
+       .container-one {
+        height: 1500px;
+    }
+    /*boxes */
+    .box-one{
+        height: 550px;
+    }
+    .box-two{
+        height: 550px;
+    }
+    .box-three{
+        height: 550px;
+    }
+    .box-fourth{
+        height: 550px;
+    }
+    /* btn */
+    .btn {
+        font-size: 1vw;
+    }
+    /* box one */
+    #set-up-line{
+        font-size: 1.5vw;
+    }
+    #punch-line {
+        font-size: 1vw;
+    }
+    /* box two */
+    #userName{
+        font-size: 1.5vw;
+    }
+    #loverName{
+        font-size: 1.5vw;
+    }
+    #percentage{
+        font-size: 1.5vw;
+    }
+    #result {
+        font-size: 1vw;
+    }
+    /* box three */
+    #lyric-result{
+        font-size: 1.5vw;
+    }
+    #artist-result {
+        font-size: 1vw;
+    }
+    /* box four */
+    #excuse-label {
+        font-size: 1.5vw;
+    }
+    #categories {
+        font-size: 1vw;
+    }
+    #excuse-response{
+        font-size: 1vw;
+    }
+}
 
 /* footer */
 footer {  

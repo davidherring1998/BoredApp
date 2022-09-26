@@ -39,9 +39,9 @@ const options = {
 
 			setUpLine.setAttribute('id','set-up-line')
 			responseLine.setAttribute('id','punch-line')
-
         return response;
     })
+		
 }
 
 const loveBtn = document.getElementById('btn-two')
@@ -125,7 +125,7 @@ function someAPi () {
 				excuseResponse.textContent = excuse;
 
 				excuseResponse.setAttribute('id', 'excuse-response');
-
+			return response;
 		})
 
 }
