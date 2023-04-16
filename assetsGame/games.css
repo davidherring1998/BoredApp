@@ -41,6 +41,7 @@ header {
     margin-left: 2%;
     height: 350px;
     width: 45%;
+    background-color: red;
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,12 +61,13 @@ header {
     margin:  5%;
     width: 90%;
     height: 90%;
+    background-color: lightblue;
 }
 .cell {
     border: 1px solid black;
-    line-height: 50px;
-    font-size: 30px;
+    font-size: 80%;
     text-align: center;
+    
 }
 #btn-one {
     width: 100%;
